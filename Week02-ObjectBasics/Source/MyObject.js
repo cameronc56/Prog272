@@ -1,21 +1,17 @@
-exports.myObject;
+exports.myObject = { 
 
-
-
-var myObject = {
-	
 	height: function() {
-		"use strict";,
+		"use strict";
 		return "5 feet 4 inches";
 	},
 
 	weight: function() {
-		"use strict";,
+		"use strict";
 		return "120 pounds";
 	},
 
 	eyeColor: function() {
-		"use strict";,
+		"use strict";	
 		return "green";
 	},
 
