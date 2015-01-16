@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+	<file name="Source/GetNumber.js">
+		<error line="1" column="10" severity="warning" message="Missing name in function declaration." source="jshint.W025" />
+		<error line="49" column="2" severity="warning" message="Unnecessary semicolon." source="jshint.W032" />
+	</file>
+</checkstyle>
