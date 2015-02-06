@@ -1,1 +1,8 @@
+bottle.py
+bottle.pyc
+mithril.js
+mithril.min.js
+*.iml
+.idea_modules
 node_modules
+.idea/*
