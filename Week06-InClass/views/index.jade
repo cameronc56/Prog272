@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p#debug
+  input#firstName(type="text" placeholder="First Name")
+  input#lastName(type="text" placeholder="Last Name")
+  
+  button#getFirstName First
+  button#getLastName Last
+ 
+  p#displayFirstName
+  p#displayLastName
+
+  button#getPresidents Get Presidents
+
+  p#displayPresidents 
