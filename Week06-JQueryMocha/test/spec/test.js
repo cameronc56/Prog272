@@ -10,6 +10,7 @@
                 $('#mainArea').load('./MainCode.html', function() {
                     $("#insertMale").trigger('click');
                     $("#getFirstName").trigger("click");
+					$("#getLastName").trigger("click");
                     $("#getAge").trigger("click");
                     $("#getCityStateZip").trigger("click");
                     done();

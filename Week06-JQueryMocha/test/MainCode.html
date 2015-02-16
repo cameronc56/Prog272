@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title></title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="http://localhost:35729/livereload.js"></script>
-    <script src="components/jquery/dist/jquery.js"></script>
-    <script src="js/Control.js"></script>
+    <script src="../public/components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="../public/js/Control.js"></script>
   </head>
   <body>
     <h1></h1>
@@ -28,27 +27,32 @@
           <input id="city" type="text" placeholder="City" class="input">
           <input id="state" type="text" placeholder="State" class="input">
           <input id="zip" type="text" placeholder="Zip Code" class="input">
+          <input id="age" type="text" placeholder="Age" class="input">
         </div>
         <hr>
         <div class="displayArea">
           <div class="radio">
-            <input id="male" type="radio" name="sex" checked="checked" class="radio">
+            <input id="male" type="radio" name="sex" value="checked" class="radio">
+            <label>Male</label>
+          </div>
+          <div class="radio">
             <input id="female" type="radio" name="sex" class="radio">
+            <label>Female</label>
           </div>
         </div>
         <hr>
         <div class="displayArea">
           <button id="getFirstName" class="button">Get First Name</button>
-          <button id="getLocation" class="button">Get City, State, Zip</button>
+          <button id="getLastName" class="button">Get Last Name</button>
+          <button id="getCityStateZip" class="button">Get City, State, Zip</button>
           <button id="getAge" class="button">Get Age</button>
         </div>
         <hr>
         <div class="displayArea">
-          <p id="displayFirstName"></p>
-          <p id="displayLastName"></p>
-          <p id="displayCity"></p>
-          <p id="displayState"></p>
-          <p id="displayZip"></p>
+          <p><span id="displayFirstName"></span><span> </span><span id="displayLastName"> </span></p>
+          <p><span id="displayCity"></span><span> </span><span id="displayState"> </span><span> </span><span id="displayZip"> </span></p>
+          <p><span id="displayAge"></span></p>
+          <p><span id="displaySex"></span></p>
         </div>
         <h2>JSON</h2>
         <div class="displayArea">
@@ -57,8 +61,7 @@
         </div>
         <hr>
         <div class="displayArea">
-          <p>tes</p>
-          <ul id="displayPresidents"></ul>
+          <ul id="jsonDisplay"></ul>
         </div>
       </div>
     </body>

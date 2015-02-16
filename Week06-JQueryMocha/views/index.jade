@@ -13,37 +13,47 @@ block content
         button#clear.button Clear
       hr
       .displayArea
-        input#firstName.input(type="text" placeholder="First Name")
-        input#lastName.input(type="text" placeholder="Last Name") 
-        input#city.input(type="text" placeholder="City")
-        input#state.input(type="text" placeholder="State")
-        input#zip.input(type="text" placeholder="Zip Code")
+        input#inputFirstName.input(type="text" placeholder="First Name")
+        input#inputLastName.input(type="text" placeholder="Last Name") 
+        input#inputCity.input(type="text" placeholder="City")
+        input#inputState.input(type="text" placeholder="State")
+        input#inputZip.input(type="text" placeholder="Zip Code")
+        input#inputAge.input(type="text" placeholder="Age")
       hr
       .displayArea
         div.radio
-          input#male.radio(type="radio" name="sex" checked="checked")
+          input#male.radio(type="radio" name="sex")
           label Male
-          input#female.radio(type="radio" name="sex")
+        div.radio
+          input#female.radio(type="radio" name="sex") 
           label Female
-      br
       hr
       .displayArea
         button#getFirstName.button Get First Name
-        button#getLocation.button Get City, State, Zip
+        button#getLastName.button Get Last Name
+        button#getCityStateZip.button Get City, State, Zip
         button#getAge.button Get Age
       hr
       .displayArea
-        p#displayFirstName
-        p#displayLastName
-        p#displayCity
-        p#displayState
-        p#displayZip
+        p
+          span#firstName
+          span 
+          span#lastName 
+        p
+          span#city
+          span 
+          span#state 
+          span 
+          span#zip 
+        p
+          span#age
+        p
+          span#sex
       h2 JSON
       .displayArea
         button#loadWithJSON.button Load JSON with jquery.GetJSON
         button#loadWithAjax.button Load JSON with jquery.ajax
       hr
       .displayArea
-        p tes
-        ul#displayPresidents
+        ul#jsonDisplay
 
