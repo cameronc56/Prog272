@@ -53,16 +53,16 @@ $(document).ready(function () {
 		$("#inputState").val("NY");
 		$("#inputZip").val("32211");
 		$("#inputAge").val("32");
-		$("#male").checked = true;
-		$("#female").checked = false;
+		$("#male").prop("checked", true);
+		$("#female").prop("checked", false);
 	}),
 	$("#insertFemale").click(function() {
 		$("#inputFirstName").val("Marie");
 		$("#inputLastName").val("Curie");
 		$("#inputCity").val("Passy");
 		$("#inputState").val("CA");
-		$("#female").checked = true;
-		$("male").checked = false;
+		$("#female").prop("checked", true);
+		$("male").prop("checked", false);
 		$("#inputZip").val("99999");
 		$("#inputAge").val("99999");
 	}),
@@ -73,8 +73,8 @@ $(document).ready(function () {
 		$("#inputState").val("");
 		$("#inputZip").val("");
 		$("#inputAge").val("");
-		$("#male").checked = false;
-		$("#female").checked = false;
+		$("#male").prop("checked", false);
+		$("#female").prop("checked", false);
 	})
 });
 
