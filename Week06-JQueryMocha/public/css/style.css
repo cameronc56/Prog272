@@ -60,11 +60,11 @@ label {
 }
 
 
-/* hide input 
+/* hide input */
 input.radio:empty {
     margin-left: -999px;
 }
-*/
+
 
 /* style label */
 input.radio:empty ~ label {

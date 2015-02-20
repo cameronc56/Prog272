@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title></title>
-    <script src="../public/components/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="../public/css/style.css">
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="../public/components/jquery/dist/jquery.js"></script>
     <script src="../public/js/Control.js"></script>
   </head>
   <body>
@@ -22,22 +23,22 @@
         </div>
         <hr>
         <div class="displayArea">
-          <input id="firstName" type="text" placeholder="First Name" class="input">
-          <input id="lastName" type="text" placeholder="Last Name" class="input">
-          <input id="city" type="text" placeholder="City" class="input">
-          <input id="state" type="text" placeholder="State" class="input">
-          <input id="zip" type="text" placeholder="Zip Code" class="input">
-          <input id="age" type="text" placeholder="Age" class="input">
+          <input id="inputFirstName" type="text" placeholder="First Name" class="input">
+          <input id="inputLastName" type="text" placeholder="Last Name" class="input">
+          <input id="inputCity" type="text" placeholder="City" class="input">
+          <input id="inputState" type="text" placeholder="State" class="input">
+          <input id="inputZip" type="text" placeholder="Zip Code" class="input">
+          <input id="inputAge" type="text" placeholder="Age" class="input">
         </div>
         <hr>
         <div class="displayArea">
           <div class="radio">
-            <input id="male" type="radio" name="sex" value="checked" class="radio">
-            <label>Male</label>
+            <input id="male" type="radio" name="radioResult" class="radio">
+            <label for="male">Male</label>
           </div>
           <div class="radio">
-            <input id="female" type="radio" name="sex" class="radio">
-            <label>Female</label>
+            <input id="female" type="radio" name="radioResult" class="radio">
+            <label for="female">Female</label>
           </div>
         </div>
         <hr>
@@ -49,10 +50,10 @@
         </div>
         <hr>
         <div class="displayArea">
-          <p><span id="displayFirstName"></span><span> </span><span id="displayLastName"> </span></p>
-          <p><span id="displayCity"></span><span> </span><span id="displayState"> </span><span> </span><span id="displayZip"> </span></p>
-          <p><span id="displayAge"></span></p>
-          <p><span id="displaySex"></span></p>
+          <p><span id="firstName"></span><span> </span><span id="lastName"> </span></p>
+          <p><span id="city"></span><span> </span><span id="state"> </span><span> </span><span id="zip"> </span></p>
+          <p><span id="age"></span></p>
+          <p><span id="sex"></span></p>
         </div>
         <h2>JSON</h2>
         <div class="displayArea">
