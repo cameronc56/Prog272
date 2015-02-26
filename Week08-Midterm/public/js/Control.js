@@ -2,7 +2,7 @@ function setActiveMenuItem() {
 	$(".nav li").removeClass("active");
 	var menuItem = $('a[href=".' + this.location.pathname + '"]');
     var name = this.location.pathname;
-    var name = name.slice(1, name.length).trim();
+    name = name.slice(1, name.length).trim();
     if (name.length === 0) {
 		   	name = 'home';
    	}
