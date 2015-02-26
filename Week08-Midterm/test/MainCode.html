@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="../public/components/jquery/dist/jquery.js"></script>
+    <script src="../public/js/Control.js"></script>
+  </head>
+  <body>
+    <h1></h1>
+    <p>Welcome to , Cameron. </p>
+    <html></html>
+    <body>
+      <div class="jsonArea">
+        <h2>HTML fields</h2>
+        <div class="displayArea">
+          <button id="insertMale" class="button">Insert Male</button>
+          <button id="insertFemale" class="button">Insert Female</button>
+          <button id="clear" class="button">Clear</button>
+        </div>
+        <hr>
+        <div class="displayArea">
+          <input id="inputFirstName" type="text" placeholder="First Name" class="input">
+          <input id="inputLastName" type="text" placeholder="Last Name" class="input">
+          <input id="inputCity" type="text" placeholder="City" class="input">
+          <input id="inputState" type="text" placeholder="State" class="input">
+          <input id="inputZip" type="text" placeholder="Zip Code" class="input">
+          <input id="inputAge" type="text" placeholder="Age" class="input">
+        </div>
+        <hr>
+        <div class="displayArea">
+          <div class="radio">
+            <input id="male" type="radio" name="radioResult" class="radio">
+            <label for="male">Male</label>
+          </div>
+          <div class="radio">
+            <input id="female" type="radio" name="radioResult" class="radio">
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <hr>
+        <div class="displayArea">
+          <button id="getFirstName" class="button">Get First Name</button>
+          <button id="getLastName" class="button">Get Last Name</button>
+          <button id="getCityStateZip" class="button">Get City, State, Zip</button>
+          <button id="getAge" class="button">Get Age</button>
+        </div>
+        <hr>
+        <div class="displayArea">
+          <p><span id="firstName"></span><span> </span><span id="lastName"> </span></p>
+          <p><span id="city"></span><span> </span><span id="state"> </span><span> </span><span id="zip"> </span></p>
+          <p><span id="age"></span></p>
+          <p><span id="sex"></span></p>
+        </div>
+        <h2>JSON</h2>
+        <div class="displayArea">
+          <button id="loadWithJSON" class="button">Load JSON with jquery.GetJSON</button>
+          <button id="loadWithAjax" class="button">Load JSON with jquery.ajax</button>
+        </div>
+        <hr>
+        <div class="displayArea">
+          <ul id="jsonDisplay"></ul>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>

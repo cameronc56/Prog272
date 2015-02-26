@@ -1,0 +1,41 @@
+extends menu-mixin
+
+block append content
+  +container
+    +jumbotron
+      h1= title
+      p Welcome to #{title}
+  .col-md-2
+  .col-md-4
+    .mainArea
+      +button("primary", "", "small", "insertMale") Insert Male
+      +button("primary", "", "small", "insertFemale") Insert Female
+      +button("primary", "", "small", "clear") Clear
+      +input("First Name", "inputFirstName")
+      +input("Last Name", "inputLastName")
+      +input("Street Address", "inputAddress")
+      +input("City", "inputCity")
+      +input("State", "inputState")
+      +input("Zip", "inputZip")
+      +input("Age", "inputAge")
+      .control-group
+        .radio
+          form
+            input#bootmale(type='radio', value='Male', name="sex")
+            p(style="margin-right: 10px;") Male
+            input#bootfemale(type='radio', value='Female', name="sex")
+            | Female
+      +button("primary", "", "small", "getFirstName") Show Name
+      +button("primary", "", "small", "getCityStateZip") Show Location
+      +button("primary", "", "small", "getAge") Show Age
+  .col-md-4
+    .displayArea
+      +panel("Person Data", "default")
+        span#firstName
+        span#lastName
+        span#address
+        span#city
+        span#state
+        span#zip
+        span#age
+  .col-md-2
