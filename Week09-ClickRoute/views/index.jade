@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+   
+  ul
+    li.listItem
+      a(href="#") Item01
+    li.listItem
+      a(href="#") Item02
+    li.listItem
+      a(href="#") Item03
+
+  h1 Response
+  h4 Result:
+  p#result
+  h4 Route:
+  p#route
+  h4 Message:
+  p#message
