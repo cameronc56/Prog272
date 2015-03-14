@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    block css
+      link(rel='stylesheet', href='/stylesheets/style.css')
+    block js
+      script(src="components/jquery/dist/jquery.js")
+      script(src="javascripts/Callbacks.js")
+      script(src="http://localhost:35729/livereload.js")
+  body
+    block content
