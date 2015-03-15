@@ -1,5 +1,28 @@
 # Comments for Cook
 
+Your copy of setActiveMenu should look like this:
+
+```
+function setActiveMenuItem() {
+	$(".nav li").removeClass("active");
+	var menuItem = $('a[href=".' + this.location.pathname + '"]');
+    var name = this.location.pathname;
+    name = name.slice(1, name.length).trim();
+    if (name.length === 0) {
+		   	name = 'home';
+   	}
+    try {
+      var menuItem1 = $('#' + name);
+      menuItem1.addClass('active');
+    } catch(e) {
+      // Do Nothing. Suppress error.
+    }
+}
+```
+
+You need to have the **try..catch** statement or you may have problem with
+the tests since the menu item may or may not be there.
+
 You are separating method calls with commas when they should be separated with
 semicolons. This is what you wrote:
 
@@ -174,4 +197,27 @@ $(document).ready(function () {
     setActiveMenuItem();
     initialize();
 });
+```
+
+Once you do all this, the errors on your test page start to go away. For 
+instance. You write:
+
+```
+it('expect age to equal 32', function() {
+   var age = parseInt($("#age").html());
+   expect(age).to.equal(32);
+});
+```
+
+This test should pass, but you do not inseart a number into 
+age, instead you insert a string on about line 35 of Control.js:
+
+```
+$("#age").html(" - Age: " + age);
+```
+
+If you had written this, the test would pass:
+
+```
+$("#age").html(age);
 ```
