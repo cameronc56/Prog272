@@ -30,9 +30,10 @@ def explore_city_data(city_data):
 
     # Please calculate the following values using the Numpy library
     # Size of data?
-    print "Size of data:\t", np.prod(housing_features.shape) #6578 data points
+    #print "Size of data:\t", np.prod(housing_features.shape) #6578 data points
+    print "#Number of data:", len(housing_features)
     # Number of features?
-    print "# of features:\t", len(housing_features) #506 features (13 data points each)
+    print "# of features:\t", housing_features.shape[1] #506 features (13 data points each)
     # Minimum value
     print "Minimum price:\t", housing_prices.min()
     # Maximum Value?
